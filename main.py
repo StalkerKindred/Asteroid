@@ -1,10 +1,14 @@
+#Imports
 import pygame
 from constants import *
 from player import Player,Shot
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
+
 pygame.init()
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+
+screen = pygame.display.set_mode((pygame.display.Info().current_w, pygame.display.Info().current_h))
+
 def main():
     print("Starting Asteroids!")
     print(f"Screen width: {SCREEN_WIDTH}")
